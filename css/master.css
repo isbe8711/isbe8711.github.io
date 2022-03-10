@@ -1,9 +1,11 @@
 body {
   background-color: white;
+  text-align: center;
+  width: 100%;
 }
 
 p {color: #black;
-text-align: center;
+text-align: center
 }
 
 
@@ -17,10 +19,6 @@ p {
   color: #black;
 }
 
-test-class{
-  text-align: center;
-  text-size: 500%
-}
 
 h1{
   font-style: italic;
@@ -47,9 +45,19 @@ button{
   color: #fc9803;
 }
 
-ul{
+nav a
+{
   text-align: left;
   text-shadow: orange;
+  display: block;
+}
+
+form {
+  text-align: center;
+}
+
+input{
+  text-align: center;
 }
 
 
@@ -63,7 +71,8 @@ ul{
 .test-class {
   text-shadow: 2px 5px #fc9803;
   text-align: center;
-  text-size: 700%;
+  text-size: 800%;
+  width: 100%;
 }
 
 a:hover{
@@ -94,6 +103,7 @@ body{font-family: 'Courier Prime', monospace;
 
 a{
   color:#fcb103
+  text-align: left;
 }
 
 div {
@@ -115,6 +125,7 @@ div {
     flex-flow: row wrap;
     background-color: white;
     padding 20px
+  }
     #grid {
       display: grid;
       background-color: white;
@@ -122,6 +133,15 @@ div {
       grid-template-rows: 1fr 1fr 1fr;
       gap: 20px;
     }
+
+    #bloggrid {background-color: white;
+    padding: 20px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr 1fr;
+    gap: 20px;
+  }
 
     #header {
       background-color: white;
@@ -136,6 +156,7 @@ div {
       grid-column: 1;
       grid-row: 2/4;
       padding: inherit;
+      display:block;
     }
 
 
@@ -154,17 +175,20 @@ div {
     #image {
       width:100%
       height: auto;
+      align-content: center;
     }
+
+
 
 p{
   background-color: white;
   }
 }
 @media screen and (max-width: 399px) {
-div {
-  background-color: white;
-  padding: 20px;
+div {}
   #grid {
+    background-color: white;
+    padding: 20px;
     display: grid;
     background-color: white;
     grid-template-columns: 1fr;
@@ -172,9 +196,18 @@ div {
     gap: 20px;
   }
 
+  #bloggrid{background-color: white;
+  padding: 20px;
+  display: grid;
+  background-color: white;
+  grid-template-columns: 1fr;
+  grid-template-rows: .1fr 1fr 1fr;
+  gap: 20px;
+}
+
   #header {
     background-color: white;
-    grid-column: 1/2;
+    grid-column: 1;
     grid-row: 1/2;
     text-align: center;
     text size: 700%;
@@ -182,16 +215,17 @@ div {
 
   #navigation {
     background-color: white;
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2/3;
     padding: inherit;
+    display:block;
   }
 
 
   #content {
     background-color: white;
-    grid-column: 3/2;
-    grid-row: 3/2;
+    grid-column: 1;
+    grid-row: 3/4;
   }
 
 
@@ -205,139 +239,11 @@ div {
     height: auto;
   }
 
-  #grid {
-    display: grid;
-    background-color: white;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr;
-    gap: 20px;
-  }
-
-  #header {
-    background-color: white;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: center;
-    text size: 700%;
-  }
-
-  #navigation {
-    background-color: white;
-    grid-column: 1;
-    grid-row: 2;
-    padding: inherit;
-  }
-
-
-  #content {
-    background-color: white;
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-
-  #test-id-1 {
-    color:Black;
-    text-align: center;
-  }
-
-  #image {
-    size:
-}
 
 
 
 
-@media screen and (max-width: 399px){
-  body{
-    background color: gray;
-    #grid {
-      display: grid;
-      background-color: white;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 20px;
-    }
 
-    #header {
-      background-color: white;
-      grid-column: 1/4;
-      grid-row: 1;
-      text-align: center;
-      text size: 700%;
-    }
-
-    #navigation {
-      background-color: white;
-      grid-column: 1;
-      grid-row: 2/4;
-      padding: inherit;
-    }
-
-
-    #content {
-      background-color: white;
-      grid-column: 2/4;
-      grid-row: 2/4;
-    }
-
-
-    #test-id-1 {
-      color:Black;
-      text-align: center;
-    }
-
-    #image {
-      width:100%
-      height: auto;
-    }
-
-    #grid {
-      display: grid;
-      background-color: white;
-      grid-template-columns: 1fr ;
-      grid-template-rows: 1fr;
-      gap: 20px;
-    }
-
-    #header {
-      background-color: white;
-      grid-column: 1;
-      grid-row: 1;
-      text-align: center;
-      text size: 700%;
-    }
-
-    #navigation {
-      background-color: white;
-      grid-column: 1;
-      grid-row: 2;
-      padding: inherit;
-    }
-
-
-    #content {
-      background-color: white;
-      grid-column: 2;
-      grid-row: 2;
-    }
-
-
-    #test-id-1 {
-      color:Black;
-      text-align: center;
-    }
-
-    #image {
-      size:
-  }
-}
-
-.box{
-  background-color:inherit;
-  padding: 50px
-  display
-}
 
 
 
