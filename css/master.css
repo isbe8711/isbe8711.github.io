@@ -22,8 +22,8 @@ p {
 
 h1{
   font-style: italic;
-  font-size: 700%
-  color:#fc9803;
+  font-size: 50px;
+  color:#white;
   text-align: center;
 
 
@@ -70,19 +70,20 @@ input{
 }
 
 .test-class {
-  text-shadow: 2px 5px #fc9803;
+  text-shadow: 5px 5px #fc9803;
   text-align: center;
-  text-size: 2000%;
+  font-size: 75px;
   width: 100%;
 }
 
 a:hover{
-  color: #7303fc;
+  color: #orange;
 }
+
 
 title{
   font-style: bold oblique;
-  color: #fc9803;
+  color: #white;
   text-align: center;
 }
 
@@ -92,14 +93,14 @@ body{font-family: 'Courier Prime', monospace;
 }
 
 .hover-button{
-  border-top-left-radius: 25px
-  padding: 16px
+  border-top-left-radius: 25px;
+  padding: 16px;
   border: none:;
   transition:box-shadow 1s linear;
 }
 
 .hover-button:hover{
-  box-shadow: 1px 1px 3px 1px
+  box-shadow: 3px 3px 3px 3px
 }
 
 a{
@@ -125,7 +126,7 @@ div {
     display: flex;
     flex-flow: row wrap;
     background-color: white;
-    padding 20px
+    padding 20px;
   }
     #grid {
       display: grid;
@@ -211,7 +212,7 @@ div {}
     grid-column: 1;
     grid-row: 1/2;
     text-align: center;
-    text size: 700%;
+    text size: 500%;
   }
 
   #navigation {
