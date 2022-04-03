@@ -103,6 +103,12 @@ body{font-family: 'Courier Prime', monospace;
   box-shadow: 3px 3px 3px 3px
 }
 
+.was-clicked{
+  padding: 20px;
+  color: rebeccapurple;
+}
+
+
 a{
   color:#fcb103
   text-align: left;
@@ -241,6 +247,10 @@ div {}
     height: auto;
   }
 
+button {
+  transition:all 1000ms ease-in-out;
+  font-size: 40px;
+}
 
 
 
